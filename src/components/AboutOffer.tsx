@@ -10,7 +10,7 @@ const AboutOffer = () => {
           Mgnonec accuan malesuada orcinec
         </p>
 
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <OfferBox
             heading="WEDDING PHOTOGRAPHY"
             para="Wedding photographs give an excellent opportunity to experience the joyful moments of the special day again and again."
