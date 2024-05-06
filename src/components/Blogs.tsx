@@ -84,7 +84,7 @@ const Blogs = () => {
             Recent Posts
           </h3>
           {blogData.map((blog) => (
-            <div className="py-3">
+            <div className="py-3" key={blog.alt}>
               <img src={blog.img} alt={blog.alt} />
               <span className="block text-lg py-2 hover:text-orange-500 hover:cursor-pointer transition-all font-semibold">
                 {blog.heading}

@@ -1,21 +1,24 @@
 import NewModal from "./NewModal";
 
+const categoryies = [
+  "show all",
+  "first category",
+  "second category",
+  "third Category",
+];
+
 const ImageGallery = () => {
   return (
     <>
       <div className="flex flex-col md:flex-row justify-center items-center gap-8 pt-12">
-        <span className="text-gray-800 font-bold md:font-semibold hover:text-orange-500 transition-all hover:cursor-pointer uppercase">
-          Show All
-        </span>
-        <span className="text-gray-800 font-bold md:font-semibold hover:text-orange-500 transition-all hover:cursor-pointer uppercase">
-          First Category
-        </span>
-        <span className="text-gray-800 font-bold md:font-semibold hover:text-orange-500 transition-all hover:cursor-pointer uppercase">
-          Second Category
-        </span>
-        <span className="text-gray-800 font-bold md:font-semibold hover:text-orange-500 transition-all hover:cursor-pointer uppercase">
-          Third Category
-        </span>
+        {categoryies.map((category, index) => (
+          <span
+            key={index}
+            className="text-gray-800 font-bold md:font-semibold hover:text-orange-500 transition-all hover:cursor-pointer uppercase"
+          >
+            {category}
+          </span>
+        ))}
       </div>
       <section className="grid grid-cols-1 place-items-center md:grid-cols-4 gap-4 py-8">
         <NewModal src="/gallery-img01-bg.webp" alt="gallary 1" />
